@@ -1,0 +1,31 @@
+html
+    font-size: 10px
+
+body
+    font-family: $font-stack
+    font-weight: 400
+    font-size: 1.6rem
+    line-height: 1.7
+    color: $dark-color
+
+a
+    text-decoration: none
+    color: $primary-color
+
+    &:hover
+        @include glue-background-color
+
+
+#intro-heading
+    font-size: 3rem
+    @media only screen and (max-width: 960px)
+        font-size: 2rem
+
+#intro-main
+    font-size: 2rem
+    @media only screen and (max-width: 960px)
+        font-size: 1.5rem
+
+.award-heading
+    text-transform: uppercase
+    @include card-style-1

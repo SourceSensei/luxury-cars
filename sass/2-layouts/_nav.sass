@@ -1,0 +1,37 @@
+.nav-main
+    position: relative
+
+
+.ul-nav
+    position: absolute
+    top: 7rem
+    left: 65%
+    @media only screen and (max-width: 960px)
+        top: 5rem
+        left: 50%
+
+.li-nav
+    color: $primary-color
+    list-style: none
+    display: inline-block
+    padding: 0 2rem
+    font-size: 1.5rem
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 0.2rem
+    @media only screen and (max-width: 960px)
+        float: right
+        font-size: 0.7rem
+        padding: 1rem
+        font-weight: 500
+        
+
+    &:hover
+        cursor: pointer
+        background-color: rgba(0,0 ,0 , 0.4 )
+        border-radius: 0.5rem
+        box-shadow: 0 1rem 2rem rgba(248, 243, 243, 0.2)
+        @include glue-background-color
+
+    &:active
+        @include button-move-top

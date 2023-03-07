@@ -1,0 +1,28 @@
+=glue-background-color
+    background-image: linear-gradient(to right, $primary-color, $secondary-color)
+    -webkit-background-clip: text
+    color: transparent
+    opacity: 0.8
+
+=button-move-top
+    position: relative
+    top: -0.2rem
+
+=perfect-fit
+    width: 100%
+    height: auto
+    border-radius: 0.5rem
+    object-fit: cover
+
+=card-style-1
+    border: 0.1rem solid #ccc
+    border-radius: 0.4rem
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.2)
+    padding: 1rem
+    width: 30rem
+    margin: 2rem auto
+
+=favourite-3-spaces-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    +clearfix
